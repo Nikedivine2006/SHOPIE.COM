@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>shopie</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   <!--swiper css link-->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+   <!--css link-->
+   <link rel='stylesheet' type='text/css' media='screen' href='ecommerce website.css'>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!--header starts-->
+    <section class="header">
+
+        <a href="home.html" class="logo"> <i class="fas fa-store"></i> shopie </a>
+    
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="login.html" class="fas fa-user"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="cart.html" class="fas fa-shopping-cart"></a>
+        </div>
+        
+    </section>
+      <!--header ends-->
+
+<!--sidebar starts-->
+    
+<div class="side-bar">
+
+    <div id="close-side-bar" class="fas fa-times"></div>
+
+    <div class="user">
+        <img src="C:\Users\Divine\Desktop\ecommerce website\poject files - Copy\images\user-img.png" alt="">
+        <h3>Nike divine</h3>
+        <a href="ecommerce website.html">log out</a>
+    </div>
+
+    <nav class="navbar">
+        <a href="home.html"> <i class="fas fa-angle-right"></i> home </a>
+        <a href="about.html"> <i class="fas fa-angle-right"></i> about </a>
+        <a href="products.html"> <i class="fas fa-angle-right"></i> products </a>
+        <a href="contact.html"> <i class="fas fa-angle-right"></i> contact </a>
+        <a href="login.html"> <i class="fas fa-angle-right"></i> login </a>
+        <a href="register.html"> <i class="fas fa-angle-right"></i> register </a>
+        <a href="cart.html"> <i class="fas fa-angle-right"></i> cart </a>
+    </nav>
+
+</div>
+
+<!-- side-bar section ends -->
+
+ <!--home starts-->
+ <section class="home">
+
+    <div class="swiper home-slider">
+
+        <div class="swiper-wrapper">
+
+        <div class="swiper-slide slide">
+            <div class="image">
+                <img src="images/home-img-1.jpg" alt="">
+            </div>
+            <div class="content">
+                <span>upto 50% off</span>
+                <h3>smartphones</h3>
+                <p><span>BIG PROMOTION ON PHONES IN SHOPIE</span><br>Enjoy up to 50% of every purchase on andriod and iphone from Now to september 29
+                before they are out of stock only <br></p>
+                <p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (-100000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+
+                <a href="products.html" class="btn">shop now</a>
+            </div>
+        </div>
+        </div>
+    </section>
+<!-- home section ends -->
+
+ <!--banner starts-->
+ <section class="banner">
+
+    <div class="box-container">
+
+        <a href="#" class="box">
+            <img src="images/banner-1.jpg" alt="">
+            <div class="content">
+                <span>special offer</span>
+                <h3>upto 50% off</h3>
+            </div>
+        </a>
+        
+        <a href="#" class="box">
+            <img src="images/banner-2.jpg" alt="">
+            <div class="content">
+                <span>special offer</span>
+                <h3>upto 50% off</h3>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="images/banner-3.jpg" alt="">
+            <div class="content">
+                <span>special offer</span>
+                <h3>upto 50% off</h3>
+            </div>
+        </a>
+        
+    </div>
+ </section>
+ <!--banner ends-->
+
+<!--arrivals starts-->
+<section class="arrivals">
+
+<h1 class="heading"> new <span>arrivals</span> </h1>
+
+<div class="box-container">
+
+    <div class="box">
+        <div class="image">
+            <img src="images/arrival-1.jpg" class="main-img" alt="">
+            <img src="images/arrival-1-hover.jpg" class="hover-img" alt="">
+        </div>
+        <div class="content">
+            <h3>HD television</h3>
+            <div class="price"> $249.99 <span>$399.99</span> </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+    </div>
+
+ <div class="box">
+            <div class="image">
+                <img src="images/arrival-2.jpg" class="main-img" alt="">
+                <img src="images/arrival-2-hover.jpg" class="hover-img" alt="">
+            </div>
+            <div class="content">
+                <h3>lenovo laptop</h3>
+                <div class="price"> $249.99 <span>$399.99</span> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/arrival-3.jpg" class="main-img" alt="">
+                <img src="images/arrival-3-hover.jpg" class="hover-img" alt="">
+            </div>
+            <div class="content">
+                <h3>new smartphone</h3>
+                <div class="price"> $249.99 <span>$399.99</span> </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="images/arrival-4.jpg" class="main-img" alt="">
+                <img src="images/arrival-4-hover.jpg" class="hover-img" alt="">
+            </div>
+        <div class="content">
+            <h3>new printer</h3>
+            <div class="price"> $249.99 <span>$399.99</span> </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="image">
+            <img src="images/arrival-5.jpg" class="main-img" alt="">
+            <img src="images/arrival-5-hover.jpg" class="hover-img" alt="">
+        </div>
+        <div class="content">
+            <h3>new headphones</h3>
+            <div class="price"> $249.99 <span>$399.99</span> </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="image">
+            <img src="C:\Users\Divine\Desktop\ecommerce website\poject files - Copy\images\el_hover_img1.jpg" class="main-img" alt="">
+            <img src="C:\Users\Divine\Desktop\ecommerce website\poject files - Copy\images\el_hover_img1.jpg-hover.jpg" class="hover-img" alt="">
+        </div>
+        <div class="content">
+            <h3>new speakers</h3>
+            <div class="price"> $249.99 <span>$399.99</span> </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="image">
+            <img src="images/arrival-6.jpg" class="main-img" alt="">
+            <img src="images/arrival-6-hover.jpg" class="hover-img" alt="">
+        </div>
+        <div class="content">
+            <h3>new speakers</h3>
+            <div class="price"> $249.99 <span>$399.99</span> </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="image">
+            <img src="images/arrival-2.jpg" class="main-img" alt="">
+            <img src="images/arrival-2-hover.jpg" class="hover-img" alt="">
+        </div>
+        <div class="content">
+            <h3>new speakers</h3>
+            <div class="price"> $249.99 <span>$399.99</span> </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+</div>
+</div>
+
+<div class="box">
+    <div class="image">
+        <img src="images/arrival-3.jpg" class="main-img" alt="">
+        <img src="images/arrival-3-hover.jpg" class="hover-img" alt="">
+    </div>
+    <div class="content">
+        <h3>new speakers</h3>
+        <div class="price"> $249.99 <span>$399.99</span> </div>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+
+</section>
+
+
+<!-- footer section starts  -->
+
+<section class="quick-links">
+
+    <a href="home.html" class="logo"> <i class="fas fa-store"></i> shopie </a>
+
+    <div class="links">
+        <a href="home.html"> home </a>
+        <a href="about.html"> about </a>
+        <a href="products.html"> products </a>
+        <a href="contact.html"> contact </a>
+        <a href="login.html"> login </a>
+        <a href="register.html"> register </a>
+        <a href="cart.html"> cart </a>
+    </div>
+
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+    </div>
+
+</section>
+
+<section class="credit">
+
+    <p> created by <span>mr. web designer</span> | all rights reserved! </p>
+
+    <img src="images/card_img.png" alt="">
+
+</section>
+<!--footer section ends-->
+
+
+    <script src="https://kit.fontawesome.com/b29d397586.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src='ecommerce website.js'></script>
+</body>
+</html>
